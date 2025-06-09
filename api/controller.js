@@ -1,9 +1,9 @@
 const database = require("./database");
 
 async function getNames(req, res) {
-  const responseDB = await database.query("select * from alunos");
+  // const responseDB = await database.query("select * from alunos");
 
-  res.json(responseDB.rows);
+  res.json("Host on Vercel");
 }
 
 module.exports = { getNames };
